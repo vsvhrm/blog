@@ -11,13 +11,9 @@ interface Props {
 const props = withDefaults(defineProps<Props>(), {
   pageCount: 10
 });
-const emit = defineEmits(['update:modelValue']);
 const router = useRouter();
 
-const currentPage = computed({
-  get: () => props.modelValue,
-  set: (value) => emit('update:modelValue', value)
-});
+const currentPage = defineModel<number>({ required: true });
 
 const pages = computed(() =>
   Array.from({ length: Math.ceil(props.total / props.pageCount) }, (_, i) => i + 1)
