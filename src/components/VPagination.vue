@@ -38,9 +38,9 @@ function onClickNext() {
   }
 }
 
-watch(currentPage, (page) => {
+watch(currentPage, async (page) => {
   const query = page === 1 ? {} : { page };
-  router.push({ query });
+  await router.push({ query });
 });
 </script>
 
