@@ -1,4 +1,6 @@
 <script setup lang="ts">
+import ChevronLeftIcon from '@/assets/icons/chevron-left.svg?use';
+import ChevronRightIcon from '@/assets/icons/chevron-right.svg?use';
 import { computed, watch } from 'vue';
 import { useRouter } from 'vue-router';
 
@@ -54,9 +56,7 @@ watch(currentPage, async (page) => {
       rel="prev"
       @click.prevent="onClickPrev"
     >
-      <svg width="16" height="16" aria-hidden="true">
-        <use href="/images/icons.svg#chevron-left"></use>
-      </svg>
+      <ChevronLeftIcon width="16" height="16" aria-hidden="true" />
     </a>
     <ol class="pagination__list">
       <li v-for="(page, index) of pages" :key="`${page}-${index}`" class="pagination__item">
@@ -79,9 +79,7 @@ watch(currentPage, async (page) => {
       rel="next"
       @click.prevent="onClickNext"
     >
-      <svg width="16" height="16" aria-hidden="true">
-        <use href="/images/icons.svg#chevron-right"></use>
-      </svg>
+      <ChevronRightIcon width="16" height="16" aria-hidden="true" />
     </a>
   </nav>
 </template>

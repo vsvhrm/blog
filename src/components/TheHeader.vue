@@ -1,9 +1,12 @@
+<script setup lang="ts">
+import FlagUKIcon from '@/assets/icons/flag-uk.svg?use';
+import LogoIcon from '@/assets/icons/logo.svg?use';
+</script>
+
 <template>
   <header class="header">
     <a class="header__link" href="/" aria-label="Home">
-      <svg class="header__logo" width="84" height="25" aria-hidden="true">
-        <use href="/images/icons.svg#logo"></use>
-      </svg>
+      <LogoIcon class="header__logo" width="84" height="25" aria-hidden="true" />
     </a>
     <div class="header__right">
       <nav class="navbar" aria-label="Main menu">
@@ -22,9 +25,7 @@
           aria-label="Select your language preference"
           type="button"
         >
-          <svg class="header__icon" width="24" height="24" aria-hidden="true">
-            <use href="/images/icons.svg#flag-uk"></use>
-          </svg>
+          <FlagUKIcon class="header__icon" width="24" height="24" aria-hidden="true" />
         </button>
         <button class="header__btn-toolbar btn" type="button">Let's work</button>
       </div>
