@@ -18,6 +18,7 @@
   },
   "devDependencies": {
     "@rushstack/eslint-patch": "^1.8.0",
+    "@spiriit/vite-plugin-svg-spritemap": "^4.0.1",
     "@tsconfig/node22": "^22.0.1",
     "@types/node": "^22.13.14",
     "@vitejs/plugin-vue": "^5.0.5",
