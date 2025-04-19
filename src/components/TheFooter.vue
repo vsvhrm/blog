@@ -1,3 +1,7 @@
+<script setup lang="ts">
+import LocationIcon from '@/assets/icons/location.svg?use';
+</script>
+
 <template>
   <footer class="footer">
     <p class="footer__caption">Is there a project?</p>
@@ -13,18 +17,14 @@
           Office in Russia<br />
           139 Ruben Station Lake Drew, NM 52678<br />
           <a href="#" class="footer__btn-address btn" aria-label="Contacts">
-            <svg width="12" height="12" aria-hidden="true">
-              <use href="/images/icons.svg#location"></use>
-            </svg>
+            <LocationIcon width="12" height="12" aria-hidden="true" />
           </a>
         </div>
         <div>
           Office in Dubai<br />
           139 Ruben Station Lake Drew, NM 52678<br />
           <a href="#" class="footer__btn-address btn" aria-label="Contacts">
-            <svg width="12" height="12" aria-hidden="true">
-              <use href="/images/icons.svg#location"></use>
-            </svg>
+            <LocationIcon width="12" height="12" aria-hidden="true" />
           </a>
         </div>
       </address>
